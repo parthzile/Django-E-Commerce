@@ -76,3 +76,7 @@ def updateItem(request):
         orderItem.delete()
 
     return JsonResponse('Item added', safe=False)
+    
+def processOrder(request):
+    print('Dtaa:', request.body)
+    return JsonResponse("Process Submitted", safe = False)
