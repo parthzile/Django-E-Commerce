@@ -139,13 +139,13 @@
 				method: 'POST',
 				headers:{
 					"Content-Type":"application/json",
-					"X-CSRFToken":'csrftoken'
+					"X-CSRFToken":csrftoken,
 				},
-				body:JSON.stringify({"form":userFormData, "shipping": shippingInfo})
+				body:JSON.stringify({"form":userFormData, "shipping": shippingInfo}),
 			})
 			.then((response)=> response.json())
 			.then((data)=> {
-				console.log('Success': , data);
+				console.log('Success:' , data);
 				alert('Transaction completed');
 				window.location.href = "{% url 'store' %}"
 			})
