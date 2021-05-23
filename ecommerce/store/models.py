@@ -15,6 +15,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=7,decimal_places=2)
     digital = models.BooleanField(default=False,null=True, blank=True)  #To check of a product is a virtual  product or physical product.
     image = models.ImageField(null=True, blank=True)
+    is_this_a_local_product = models.BooleanField(default=True,null=True, blank=True)  #To check of a product is a virtual  product or physical product.
+    
     def __str__(self):
         return self.name
     
