@@ -1,8 +1,10 @@
+from django import forms
 from django.shortcuts import render
 from .models import *
 from django.http import JsonResponse
 import json
 import datetime
+from django.contrib.auth.forms import UserCreationForm
 
 
 # Create your views here.
