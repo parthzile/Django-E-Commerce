@@ -60,18 +60,18 @@
 
     <div class="row">
         <!--Block 1-->
-        {% for product in products%}
+        {% for localproduct in products%}
         <div class="col-lg-4">
             <!--Product Image-->
             <img class="thumbnail" src = "{% static 'images/placeholder.png' %}" alt="Product image here">        <!--{product.imageURL} in src to load images-->
             <div class="box-element product">
-                <h6><strong>{{product.name}}</strong></h6>
+                <h6><strong>{{localproduct.name}}</strong></h6>
                 <hr>
                 
                 <!--Buttons and Cost of Product-->
                 <button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
                 <a class="btn btn-outline-success" href="#">View</a>
-                <h4 style="display: inline-block; "><strong> Rs.{{product.price|floatformat:2}}</strong></h4>
+                <h4 style="display: inline-block; "><strong> Rs.{{localproduct.price|floatformat:2}}</strong></h4>
 
             </div>
         </div>
