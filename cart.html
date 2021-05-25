@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/cartstyle.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+<section class="cart_wrapper">
+  <div class="cart_lists">
+    <div class="cart_title">
+      <span class="material-icons-outlined">local_mall</span>
+      Your Shopping Cart
+    </div>
+
+    <div class="cart_list_wrap">
+      <div class="cart_responsive">
+        <div class="tr_item">
+          <div class="td_item item_img">
+            <img src="https://i.ibb.co/C8tfbLW/green.jpg" />
+          </div>
+          <div class="td_item item_name">
+            <label class="main">Green Satin Dress</label>
+            <label class="sub">Local</label>
+          </div>
+          <div class="td_item item_color">
+            <label>x1</label>
+          </div>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+          <div class="td_item item_price">
+            <label>$100.00</label>
+          </div>
+          <div class="td_item item_remove">
+            <span class="material-icons-outlined">close</span>
+          </div>
+        </div>
+
+        <div class="tr_item">
+          <div class="td_item item_img">
+            <img src="https://i.ibb.co/9yQzjzz/78298405.jpg" />
+          </div>
+          <div class="td_item item_name">
+            <label class="main">Pink Shirt Dress</label>
+            <label class="sub">General</label>
+          </div>
+          <div class="td_item item_color">
+            <label>x2</label>
+          </div>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0">
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+          <div class="td_item item_price">
+            <label>$100.00</label>
+          </div>
+          <div class="td_item item_remove">
+            <span class="material-icons-outlined">close</span>
+          </div>
+        </div>
+
+        <div class="tr_item">
+          <div class="td_item item_img">
+            <img src="https://i.ibb.co/qkdDvtV/2054202-358292.jpg" />
+          </div>
+          <div class="td_item item_name">
+            <label class="main">White Satin Dress</label>
+            <label class="sub">Local</label>
+          </div>
+          <div class="td_item item_color">
+            <label>x2</label>
+          </div>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+          <div class="td_item item_price">
+            <label>$50.00</label>
+          </div>
+          <div class="td_item item_remove">
+            <span class="material-icons-outlined">close</span>
+          </div>
+        </div>
+
+        <div class="tr_item">
+          <div class="td_item item_img">
+            <img src="https://i.ibb.co/mFvMf05/happy-young-woman-smiling-isolated-white-background-full-length-portrait-35017144.jpg" />
+          </div>
+          <div class="td_item item_name">
+            <label class="main">Black Tank top</label>
+            <label class="sub">General</label>
+          </div>
+          <div class="td_item item_color">
+            <label>x1</label>
+          </div>
+          <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          </form>
+          <div class="td_item item_price">
+            <label>$100.00</label>
+          </div>
+          <div class="td_item item_remove">
+            <span class="material-icons-outlined">close</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer">
+        <div class="back_cart">
+          <a href="#back">
+            <span class="material-icons-outlined">west</span>
+            Back to Shop
+          </a>
+        </div>
+        <div class="subtotal">
+          <label>Subtotal: </label>
+          <strong>$1000.00</strong>
+        </div>
+          <button class="btn">Checkout</button>
+      </div>      
+    </div>
+  </div>
+  <div class="cart_details">
+    <img src="https://i.ibb.co/DQczB3F/aakhri-icha.jpg">
+  </div>
+</section>
+
+<!-- Main -->
+<script src="js/cartmain.js"></script>
+
+</body>
+</html>
