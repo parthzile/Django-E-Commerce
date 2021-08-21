@@ -1,7 +1,13 @@
-# Django-E-Commerce
+# Quick E-Commerce
+An eCommerce application that allows user to shop and explore products without the need to create an account. The user needs to fill in the shipping details & payment info to order the product. This saves users from spam emails & enables them to shop faster without the need to create an account. 
 
-Issues Remaining:
-1.Login
-2.Image Rendering on Upload
-3.Missing Shipping Address for Guest User 
-4. Render images and values in Cart.html
+# Tech Stack
+Front End: HTML, CSS, JavaScript
+
+Back End: Django
+
+# Team Members
+Muskan 
+Parth 
+Neil Bhutada
+
